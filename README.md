@@ -7,9 +7,12 @@ by trained human workers.
 
 Each entry represents a single QA session:
 given a question sentence, the responsible worker tried to search for the appropriate
-information from Wikipedia using the search box and/or inner hyperlinks, and constructs
+information from Wikipedia using the search box and/or inner hyperlinks, and constructed
 the answer paragraphs according to the search results.
 The whole process of each retrieval is recorded manually by the same worker.
+
+All sessions are processed from 2023-12-04 to 2023-12-25 with access to Japanese Wikipedia
+(http://ja.wikipedia.org/).
 
 The dataset consists of following data:
 
