@@ -21,9 +21,14 @@ The dataset consists of following data:
 * List of references with either extracted paragraph or summarization from a Wikipedia
 article
 
-As well as the successful session, we also recorded the failed session: the worker
-failed to construct the answer from the search results. In this case we recorded
-at least the retrieval process despite lack of the answer.
+As well as successful sessions with answer paragraphs, we also recorded failed sessions:
+the worker failed to construct the answer from the search results.
+In this case we recorded at least the retrieval process despite lack of the answer.
+
+Importantly, we requested the workers strictly to answer the questions based on only
+explicit citation from Wikipedia.
+That means, the workers should leave the answer empty if they couldn't find any information
+from Wikipedia even if they have some implicit knowledge to answer the questions.
 
 We release this version of the dataset with the following dataset chunks:
 
