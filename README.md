@@ -21,14 +21,23 @@ The dataset consists of following data:
 * List of references with either extracted paragraph or summarization from a Wikipedia
 article
 
+## Target situation and limitation
+
+We designed this dataset to ensure that the answers reflect only exact information written in the cited references,
+and does not reflect any external information and/or implicit knowledges.
+This design is useful to measure/investigate QA tasks with accurate retrieval from the given data source.
+Please keep in mind that the dataset is not designed to provide a QA with correct information.
+
+We requested the workers strictly to answer the questions based on only explicit citation from Wikipedia.
+That means, the workers should write answers that may be different from their implicit knowledge,
+and should leave the answer empty if they couldn't find any information from Wikipedia
+even if they know something to answer the questions.
+
+# Dataset chunks
+
 As well as successful sessions with answer paragraphs, we also recorded failed sessions:
 the worker failed to construct the answer from the search results.
 In this case we recorded at least the retrieval process despite lack of the answer.
-
-Importantly, we requested the workers strictly to answer the questions based on only
-explicit citation from Wikipedia.
-That means, the workers should leave the answer empty if they couldn't find any information
-from Wikipedia even if they have some implicit knowledge to answer the questions.
 
 We release this version of the dataset with the following dataset chunks:
 
