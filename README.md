@@ -74,10 +74,12 @@ Each entry has the following schema:
                 "referrer": number, // The reference ID at which the worker clicked the hyperlink
             }
 
+            // Either "page" or "not_found" field exists.
+
             // Extracted content
             "page": {
                 "title": string, // Title of the Wikipedia article
-                "url": string, // URL of either Wikipedia article or search results
+                "url": string, // URL of the Wikipedia article
 
                 // Either "quote" or "summary" field exists.
                 // Absense of both field means that the page doesn't contain appropriate data.
@@ -94,6 +96,11 @@ Each entry has the following schema:
                     "text": string, // Summary text about the page written by the worker.
                     "method": string, // Description about how the worker wrote the summary.
                 }
+            }
+
+            // Search result (not found)
+            "not_found": {
+                "url": string, // URL of the Wikipedia search results
             }
         },
     ],
