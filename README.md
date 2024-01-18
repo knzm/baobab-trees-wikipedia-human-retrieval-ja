@@ -1,3 +1,13 @@
+---
+license: apache-2.0
+task_categories:
+- question-answering
+language:
+- ja
+size_categories:
+- 1K<n<10K
+---
+
 # Japanese Wikipedia Human Retrieval dataset
 
 This is a Japanese question answereing dataset with retrieval on Wikipedia articles
